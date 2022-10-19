@@ -17,8 +17,18 @@
 ---
    
 _Repositorio del proyecto de la cátedra de Redes y Comunicaciones de la Universidad Nacional de Lanús, año 2022._
+
+**Tabla de contenidos:**
+- [Enunciado](#enunciado)
+  - [Proyecto](#proyecto)
+  - [Req. funcionales](#req-funcionales)
+    - [Servidor](#servidor)
+    - [Cliente](#cliente)
+    - [UI](#ui)
+  - [Req. No funcionales](#req-no-funcionales)
+
 ## Enunciado
-### Proyecto: 
+### Proyecto 
 Desarrollar en lenguaje C o C++ una calculadora de números enteros positivos,
 basada en dos aplicaciones que se ejecutarán en modo consola, las cuales
 estarán comunicadas por sockets (una con el rol de servidor y otra con el rol de
