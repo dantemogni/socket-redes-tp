@@ -1,13 +1,17 @@
 # Client -------------------------------------------------------------------
 compile-client:
-	g++ -o .compiled/Client client/Client.cpp
+	g++ -o .compiled/Client client/*.cpp
 
 run-client:
 	./.compiled/Client
 
+client: compile-client run-client
+
 # Server -------------------------------------------------------------------
 compile-server:
-	g++ -o .compiled/Server server/Server.cpp server/Calculator.cpp
+	g++ -o .compiled/Server server/*.cpp
 
 run-server:
 	./.compiled/Server
+
+server: compile-server && run-server

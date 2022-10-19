@@ -6,7 +6,9 @@ int main(int argc, char const *argv[])
 {
     string input;
 
-    cout << "CALCULADORA CLI APPLICATION" << endl
+    cout 
+        << endl 
+        << "CALCULADORA CLI APPLICATION" << endl
         << "****************************************************" << endl << endl
         << "> Menu Principal" << endl
         << "\tFormato valido: [operando][operacion][operando] | [operando][Factorial]"  << endl
