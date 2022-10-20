@@ -52,3 +52,24 @@ bool Validate::IsPositive(double number){
 bool Validate::Length(string operation){
     return operation.length() <= 20 && operation.length() >= 1;
 }
+void Validate::Do(char buffer[], bool* isValid, bool* isFactorial, double* numberA, double* numberB, char* op){
+    *isValid = true;
+
+    if (Validate::Length(buffer)){
+        if (Validate::Factorial(buffer, numberA)){
+            *isFactorial = true;
+            // result = Calculator::Factorial(a);
+            // msg = "El factorial de " + to_string(a) + " es: " + to_string(result);
+        } else if (Validate::Other(buffer, op, numberA, numberB)){
+            *isFactorial = false;
+            // result = Calculator::Calculate(a, op, b);
+            // msg = to_string(a) + " " + op + " " + to_string(b) + " = " + to_string(result);
+        } else {
+            *isValid = false;
+            cout << "Operación inválida" << endl;
+        }
+    } else {
+        *isValid = false;
+        cout << "La operación debe tener entre 1 y 20 caracteres" << endl;
+    }
+}

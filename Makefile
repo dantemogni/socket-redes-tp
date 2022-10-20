@@ -9,7 +9,7 @@ client: compile-client run-client
 
 # Server -------------------------------------------------------------------
 compile-server:
-	g++ -o ./.compiled/Server server/*.cpp server/utils/*.cpp
+	g++ -o ./.compiled/Server server/*.cpp server/utils/*.cpp server/internal/*.cpp server/service/*.cpp
 
 run-server:
 	./.compiled/Server
