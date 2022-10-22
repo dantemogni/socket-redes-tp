@@ -2,11 +2,15 @@
 
 
 void socketSetup(int* server_fd, struct sockaddr_in address){
+    Logger::Info("Iniciando socket ... Puerto de escucha: " + to_string(PORT));
+
     int opt = 1;
 
     // Creating socket file descriptor
     if ((*server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
         perror("socket failed");
+        Logger::Error("Error al crear el socket");
+
         exit(EXIT_FAILURE);
     }
  
@@ -15,6 +19,8 @@ void socketSetup(int* server_fd, struct sockaddr_in address){
                    SO_REUSEADDR | SO_REUSEPORT, &opt,
                    sizeof(opt))) {
         perror("setsockopt");
+        Logger::Error("Error al configurar el socket");
+
         exit(EXIT_FAILURE);
     }
     address.sin_family = AF_INET;
@@ -26,10 +32,17 @@ void socketSetup(int* server_fd, struct sockaddr_in address){
              sizeof(address))
         < 0) {
         perror("bind failed");
+        Logger::Error("Error al enlazar el socket con el puerto: " + to_string(PORT));
+
         exit(EXIT_FAILURE);
     }
     if (listen(*server_fd, 3) < 0) {
         perror("listen");
+
+        Logger::Error("Error al escuchar en el puerto: " + to_string(PORT));
+
         exit(EXIT_FAILURE);
     }
+
+    Logger::Info("Socket iniciado correctamente en el puerto: " + to_string(PORT));
 }

@@ -4,6 +4,8 @@
 #include <math.h>
 #include <string>
 
+#include "./logger.h"
+
 using namespace std;
 
 class Calculator {      

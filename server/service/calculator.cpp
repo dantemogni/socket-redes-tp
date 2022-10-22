@@ -30,6 +30,7 @@ double Calculator::Factorial(double x) {
 }
 
 string Calculator::Do(char buffer[]){
+    Logger::Info("Calculando operacion ...");
 
     bool isValid, isFactorial;
     double result, numberA, numberB;
@@ -49,6 +50,9 @@ string Calculator::Do(char buffer[]){
     } else {
         msg = "Invalid operation";
     }
+
+    Logger::Debug(msg);
+    Logger::Info("Calculando operacion ... OK");
 
     return msg;
 }

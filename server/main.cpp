@@ -4,6 +4,7 @@
 #include "./headers/calculator.h"
 #include "./headers/validate.h"
 #include "./headers/socket.h"
+#include "./headers/logger.h"
 
 #include <netinet/in.h>
 #include <stdio.h>
@@ -13,10 +14,12 @@
 
 using namespace std;
 
-
 int main(int argc, char const *argv[]) {
+    Logger::Info("=======================================");
+    Logger::Info("========== Inicia Servidor ============");
+    Logger::Info("=======================================");
 
-    // Socket Setup
+    // setup socket
     int server_fd, new_socket, valread;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
@@ -26,18 +29,26 @@ int main(int argc, char const *argv[]) {
 
     // Main Server Loop
     while (true) {
+        Logger::Info("Esperando conexión...");
+
         // Accept new connection
         if ((new_socket
             = accept(server_fd, (struct sockaddr*)&address,
                     (socklen_t*)&addrlen))
             < 0) {
             perror("accept");
+            Logger::Error("Error al aceptar conexión");
+
             exit(EXIT_FAILURE);
         }
+
+        Logger::Info("Conexión aceptada");
 
         // Connected Socket loop
         do {
             valread = read(new_socket, buffer, 1024);
+
+            Logger::Debug("Mensaje recibido: " + string(buffer));
 
             string msg = Calculator::Do(buffer);
 
@@ -46,10 +57,12 @@ int main(int argc, char const *argv[]) {
         } while (buffer[0] != 'q');
     
         // closing the connected socket
+        Logger::Info("Cerrando conexión con socket a pedido del usuario...");
         close(new_socket);
     }
 
     // closing the listening socket
+    Logger::Info("Cerrando socket de escucha ...");
     shutdown(server_fd, SHUT_RDWR);
 
     return 0;
