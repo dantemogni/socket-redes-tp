@@ -6,7 +6,7 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#define PORT 8009
+#define PORT 8080
 
 void error(const char *msg)
 {

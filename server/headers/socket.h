@@ -5,8 +5,9 @@
 #include <stdlib.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include "./logger.h"
 
-#define PORT 8009
+#define PORT 8080
 
 using namespace std;
 
