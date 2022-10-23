@@ -45,7 +45,7 @@ int main(int argc, char const *argv[]) {
         Logger::Info("Conexión aceptada");
 
         // Connected Socket loop
-        do {
+        while(true) {
             string msg;
 
             // vacio el buffer
@@ -60,18 +60,18 @@ int main(int argc, char const *argv[]) {
                 Logger::Info("Enviando logs al cliente");
 
                 msg = Logger::GetLogFileContent();
-
+            } else if (buffer[0] == 'q') {
+                Logger::Info("Cerrando conexión con el cliente");
+                // closing the connected socket
+                close(new_socket);
+                break;
             } else {
-                 msg = Calculator::Do(buffer);
+                msg = Calculator::Do(buffer);
             }
 
             send(new_socket, msg.c_str(), msg.length(), 0);
-
-        } while (buffer[0] != 'q');
+        }
     
-        // closing the connected socket
-        Logger::Info("Cerrando conexión con socket a pedido del usuario...");
-        close(new_socket);
     }
 
     // closing the listening socket

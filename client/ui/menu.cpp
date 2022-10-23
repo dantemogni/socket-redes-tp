@@ -51,7 +51,7 @@ void subMenuCalcular(int socket){
     string operacionInput;
     char buffer[1024] = { 0 };
 
-    do
+    while(true)
     {
         cout 
             << "> Realizar cálculo" << endl
@@ -61,10 +61,15 @@ void subMenuCalcular(int socket){
             << "\tIngrese su operacion: ";
 
         cin >> operacionInput;
+        
+        if(operacionInput == "q" || operacionInput == "volver"){
+            break;
+        }
+
         send(socket, operacionInput.c_str(), operacionInput.length(), 0);
 
         int valread = read(socket, buffer, 1024);
         cout << "RESULTADO: " << buffer << endl;
-    } while (operacionInput != "q" && operacionInput != "volver");
+    }
     
 }

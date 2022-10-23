@@ -20,7 +20,10 @@ int Logger::Write(string type, string message) {
     ofstream myfile;
     myfile.open(LOG_FILE, fstream::app);
 
-    myfile << "[" + Logger::GetTimestamp() + "] [" + type + ']' + ' ' + message + '\n';
+    string msg = "[" + Logger::GetTimestamp() + "] [" + type + ']' + ' ' + message + '\n';
+    
+    cout << msg;
+    myfile << msg;
     
     myfile.close();
 
