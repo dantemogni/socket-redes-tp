@@ -1,6 +1,416 @@
-2022-10-22 17:7 [INFO] =======================================
-2022-10-22 17:7 [INFO] ========== Inicia Servidor ============
-2022-10-22 17:7 [INFO] =======================================
-2022-10-22 17:7 [INFO] Iniciando socket ... Puerto de escucha: 8009
-2022-10-22 17:7 [INFO] Socket iniciado correctamente en el puerto: 8009
-2022-10-22 17:7 [INFO] Esperando conexión...
+[2022-10-22 23:18] [INFO] =======================================
+[2022-10-22 23:18] [INFO] ========== Inicia Servidor ============
+[2022-10-22 23:18] [INFO] =======================================
+[2022-10-22 23:18] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-22 23:18] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-22 23:18] [INFO] Esperando conexión...
+[2022-10-22 23:20] [INFO] =======================================
+[2022-10-22 23:20] [INFO] ========== Inicia Servidor ============
+[2022-10-22 23:20] [INFO] =======================================
+[2022-10-22 23:20] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-22 23:20] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-22 23:20] [INFO] Esperando conexión...
+[2022-10-22 23:49] [INFO] =======================================
+[2022-10-22 23:49] [INFO] ========== Inicia Servidor ============
+[2022-10-22 23:49] [INFO] =======================================
+[2022-10-22 23:49] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-22 23:49] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-22 23:49] [INFO] Esperando conexión...
+[2022-10-22 23:57] [INFO] =======================================
+[2022-10-22 23:57] [INFO] ========== Inicia Servidor ============
+[2022-10-22 23:57] [INFO] =======================================
+[2022-10-22 23:57] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-22 23:57] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-22 23:57] [INFO] Esperando conexión...
+[2022-10-22 23:57] [INFO] Conexión aceptada
+[2022-10-22 23:57] [DEBUG] Mensaje recibido: 1+2
+[2022-10-22 23:57] [INFO] Calculando operacion ...
+[2022-10-22 23:57] [INFO] Validacion general de la operacion ...
+[2022-10-22 23:57] [INFO] Validando factorial ...
+[2022-10-22 23:57] [INFO] Validando otra operacion ...
+[2022-10-22 23:57] [DEBUG] Operation: 1+2 | Number 1: 1 | Number 2: 2 | Operator: +
+[2022-10-22 23:57] [DEBUG] La operacion no es factorial
+[2022-10-22 23:57] [DEBUG] 1+2 = 3
+[2022-10-22 23:57] [INFO] Calculando operacion ... OK
+[2022-10-22 23:57] [DEBUG] Mensaje recibido: q
+[2022-10-22 23:57] [INFO] Calculando operacion ...
+[2022-10-22 23:57] [INFO] Validacion general de la operacion ...
+[2022-10-22 23:57] [INFO] Validando factorial ...
+[2022-10-22 23:57] [INFO] Validando otra operacion ...
+[2022-10-22 23:57] [ERROR] Operacion invalida
+[2022-10-22 23:57] [DEBUG] Invalid operation
+[2022-10-22 23:57] [INFO] Calculando operacion ... OK
+[2022-10-22 23:57] [INFO] Cerrando conexión con socket a pedido del usuario...
+[2022-10-22 23:57] [INFO] Esperando conexión...
+[2022-10-22 23:57] [INFO] =======================================
+[2022-10-22 23:57] [INFO] ========== Inicia Servidor ============
+[2022-10-22 23:57] [INFO] =======================================
+[2022-10-22 23:57] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-22 23:57] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-22 23:57] [INFO] Esperando conexión...
+[2022-10-22 23:57] [INFO] Conexión aceptada
+[2022-10-22 23:58] [DEBUG] Mensaje recibido: 
+[2022-10-22 23:58] [INFO] Calculando operacion ...
+[2022-10-22 23:58] [INFO] Validacion general de la operacion ...
+[2022-10-22 23:58] [ERROR] Operacion invalida
+[2022-10-22 23:58] [DEBUG] Invalid operation
+[2022-10-22 23:58] [INFO] Calculando operacion ... OK
+[2022-10-22 23:58] [DEBUG] Mensaje recibido: 
+[2022-10-22 23:58] [INFO] Calculando operacion ...
+[2022-10-22 23:58] [INFO] Validacion general de la operacion ...
+[2022-10-22 23:58] [ERROR] Operacion invalida
+[2022-10-22 23:58] [DEBUG] Invalid operation
+[2022-10-22 23:58] [INFO] Calculando operacion ... OK
+[2022-10-23 0:1] [INFO] =======================================
+[2022-10-23 0:1] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:1] [INFO] =======================================
+[2022-10-23 0:1] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:1] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:1] [INFO] Esperando conexión...
+[2022-10-23 0:1] [INFO] Conexión aceptada
+[2022-10-23 0:1] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:1] [INFO] Calculando operacion ...
+[2022-10-23 0:1] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:1] [INFO] Validando factorial ...
+[2022-10-23 0:1] [INFO] Validando otra operacion ...
+[2022-10-23 0:1] [ERROR] Operacion invalida
+[2022-10-23 0:1] [DEBUG] Invalid operation
+[2022-10-23 0:1] [INFO] Calculando operacion ... OK
+[2022-10-23 0:3] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:3] [INFO] Calculando operacion ...
+[2022-10-23 0:3] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:3] [ERROR] Operacion invalida
+[2022-10-23 0:3] [DEBUG] Invalid operation
+[2022-10-23 0:3] [INFO] Calculando operacion ... OK
+[2022-10-23 0:4] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:4] [INFO] Calculando operacion ...
+[2022-10-23 0:4] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:4] [ERROR] Operacion invalida
+[2022-10-23 0:4] [DEBUG] Invalid operation
+[2022-10-23 0:4] [INFO] Calculando operacion ... OK
+[2022-10-23 0:4] [INFO] =======================================
+[2022-10-23 0:4] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:4] [INFO] =======================================
+[2022-10-23 0:4] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:4] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:4] [INFO] Esperando conexión...
+[2022-10-23 0:4] [INFO] Conexión aceptada
+[2022-10-23 0:4] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:4] [INFO] Enviando logs al cliente
+[2022-10-23 0:5] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:5] [INFO] Calculando operacion ...
+[2022-10-23 0:5] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:5] [ERROR] Operacion invalida
+[2022-10-23 0:5] [DEBUG] Invalid operation
+[2022-10-23 0:5] [INFO] Calculando operacion ... OK
+[2022-10-23 0:5] [INFO] =======================================
+[2022-10-23 0:5] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:5] [INFO] =======================================
+[2022-10-23 0:5] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:5] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:5] [INFO] Esperando conexión...
+[2022-10-23 0:6] [INFO] =======================================
+[2022-10-23 0:6] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:6] [INFO] =======================================
+[2022-10-23 0:6] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:6] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:6] [INFO] Esperando conexión...
+[2022-10-23 0:6] [INFO] Conexión aceptada
+[2022-10-23 0:6] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:6] [INFO] Enviando logs al cliente
+[2022-10-23 0:8] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:8] [INFO] Calculando operacion ...
+[2022-10-23 0:8] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:8] [ERROR] Operacion invalida
+[2022-10-23 0:8] [DEBUG] Invalid operation
+[2022-10-23 0:8] [INFO] Calculando operacion ... OK
+[2022-10-23 0:11] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:11] [INFO] Calculando operacion ...
+[2022-10-23 0:11] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:11] [ERROR] Operacion invalida
+[2022-10-23 0:11] [DEBUG] Invalid operation
+[2022-10-23 0:11] [INFO] Calculando operacion ... OK
+[2022-10-23 0:13] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:13] [INFO] Calculando operacion ...
+[2022-10-23 0:13] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:13] [ERROR] Operacion invalida
+[2022-10-23 0:13] [DEBUG] Invalid operation
+[2022-10-23 0:13] [INFO] Calculando operacion ... OK
+[2022-10-23 0:15] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:15] [INFO] Calculando operacion ...
+[2022-10-23 0:15] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:15] [ERROR] Operacion invalida
+[2022-10-23 0:15] [DEBUG] Invalid operation
+[2022-10-23 0:15] [INFO] Calculando operacion ... OK
+[2022-10-23 0:17] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:17] [INFO] Calculando operacion ...
+[2022-10-23 0:17] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:17] [ERROR] Operacion invalida
+[2022-10-23 0:17] [DEBUG] Invalid operation
+[2022-10-23 0:17] [INFO] Calculando operacion ... OK
+[2022-10-23 0:19] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:19] [INFO] Calculando operacion ...
+[2022-10-23 0:19] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:19] [ERROR] Operacion invalida
+[2022-10-23 0:19] [DEBUG] Invalid operation
+[2022-10-23 0:19] [INFO] Calculando operacion ... OK
+[2022-10-23 0:21] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:21] [INFO] Calculando operacion ...
+[2022-10-23 0:21] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:21] [ERROR] Operacion invalida
+[2022-10-23 0:21] [DEBUG] Invalid operation
+[2022-10-23 0:21] [INFO] Calculando operacion ... OK
+[2022-10-23 0:23] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:23] [INFO] Calculando operacion ...
+[2022-10-23 0:23] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:23] [ERROR] Operacion invalida
+[2022-10-23 0:23] [DEBUG] Invalid operation
+[2022-10-23 0:23] [INFO] Calculando operacion ... OK
+[2022-10-23 0:25] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:25] [INFO] Calculando operacion ...
+[2022-10-23 0:25] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:25] [ERROR] Operacion invalida
+[2022-10-23 0:25] [DEBUG] Invalid operation
+[2022-10-23 0:25] [INFO] Calculando operacion ... OK
+[2022-10-23 0:27] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:27] [INFO] Calculando operacion ...
+[2022-10-23 0:27] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:27] [ERROR] Operacion invalida
+[2022-10-23 0:27] [DEBUG] Invalid operation
+[2022-10-23 0:27] [INFO] Calculando operacion ... OK
+[2022-10-23 0:29] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:29] [INFO] Calculando operacion ...
+[2022-10-23 0:29] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:29] [ERROR] Operacion invalida
+[2022-10-23 0:29] [DEBUG] Invalid operation
+[2022-10-23 0:29] [INFO] Calculando operacion ... OK
+[2022-10-23 0:29] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:29] [INFO] Calculando operacion ...
+[2022-10-23 0:29] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:29] [ERROR] Operacion invalida
+[2022-10-23 0:29] [DEBUG] Invalid operation
+[2022-10-23 0:29] [INFO] Calculando operacion ... OK
+[2022-10-23 0:30] [INFO] =======================================
+[2022-10-23 0:30] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:30] [INFO] =======================================
+[2022-10-23 0:30] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:30] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:30] [INFO] Esperando conexión...
+[2022-10-23 0:30] [INFO] Conexión aceptada
+[2022-10-23 0:30] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:30] [INFO] Enviando logs al cliente
+[2022-10-23 0:30] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:30] [INFO] Enviando logs al cliente
+[2022-10-23 0:31] [INFO] =======================================
+[2022-10-23 0:31] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:31] [INFO] =======================================
+[2022-10-23 0:31] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:31] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:31] [INFO] Esperando conexión...
+[2022-10-23 0:31] [INFO] Conexión aceptada
+[2022-10-23 0:31] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:31] [INFO] Enviando logs al cliente
+[2022-10-23 0:31] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:31] [INFO] Enviando logs al cliente
+[2022-10-23 0:31] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:31] [INFO] Calculando operacion ...
+[2022-10-23 0:31] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:31] [ERROR] Operacion invalida
+[2022-10-23 0:31] [DEBUG] Invalid operation
+[2022-10-23 0:31] [INFO] Calculando operacion ... OK
+[2022-10-23 0:32] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:32] [INFO] Calculando operacion ...
+[2022-10-23 0:32] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:32] [ERROR] Operacion invalida
+[2022-10-23 0:32] [DEBUG] Invalid operation
+[2022-10-23 0:32] [INFO] Calculando operacion ... OK
+[2022-10-23 0:32] [INFO] =======================================
+[2022-10-23 0:32] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:32] [INFO] =======================================
+[2022-10-23 0:32] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:32] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:32] [INFO] Esperando conexión...
+[2022-10-23 0:32] [INFO] Conexión aceptada
+[2022-10-23 0:32] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:32] [INFO] Calculando operacion ...
+[2022-10-23 0:32] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:32] [ERROR] Operacion invalida
+[2022-10-23 0:32] [DEBUG] Invalid operation
+[2022-10-23 0:32] [INFO] Calculando operacion ... OK
+[2022-10-23 0:34] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:34] [INFO] Calculando operacion ...
+[2022-10-23 0:34] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:34] [ERROR] Operacion invalida
+[2022-10-23 0:34] [DEBUG] Invalid operation
+[2022-10-23 0:34] [INFO] Calculando operacion ... OK
+[2022-10-23 0:34] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:34] [INFO] Calculando operacion ...
+[2022-10-23 0:34] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:34] [ERROR] Operacion invalida
+[2022-10-23 0:34] [DEBUG] Invalid operation
+[2022-10-23 0:34] [INFO] Calculando operacion ... OK
+[2022-10-23 0:34] [INFO] =======================================
+[2022-10-23 0:34] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:34] [INFO] =======================================
+[2022-10-23 0:34] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:34] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:34] [INFO] Esperando conexión...
+[2022-10-23 0:34] [INFO] Conexión aceptada
+[2022-10-23 0:34] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:34] [INFO] Enviando logs al cliente
+[2022-10-23 0:34] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:34] [INFO] Calculando operacion ...
+[2022-10-23 0:34] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:34] [ERROR] Operacion invalida
+[2022-10-23 0:34] [DEBUG] Invalid operation
+[2022-10-23 0:34] [INFO] Calculando operacion ... OK
+[2022-10-23 0:37] [INFO] =======================================
+[2022-10-23 0:37] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:37] [INFO] =======================================
+[2022-10-23 0:37] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:37] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:37] [INFO] Esperando conexión...
+[2022-10-23 0:39] [ERROR] Error al aceptar conexión
+[2022-10-23 0:42] [INFO] =======================================
+[2022-10-23 0:42] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:42] [INFO] =======================================
+[2022-10-23 0:42] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:42] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:42] [INFO] Esperando conexión...
+[2022-10-23 0:42] [INFO] Conexión aceptada
+[2022-10-23 0:42] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:42] [INFO] Enviando logs al cliente
+[2022-10-23 0:42] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:42] [INFO] Calculando operacion ...
+[2022-10-23 0:42] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:42] [ERROR] Operacion invalida
+[2022-10-23 0:42] [DEBUG] Invalid operation
+[2022-10-23 0:42] [INFO] Calculando operacion ... OK
+[2022-10-23 0:43] [INFO] =======================================
+[2022-10-23 0:43] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:43] [INFO] =======================================
+[2022-10-23 0:43] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:43] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:43] [INFO] Esperando conexión...
+[2022-10-23 0:43] [INFO] Conexión aceptada
+[2022-10-23 0:43] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:43] [INFO] Enviando logs al cliente
+[2022-10-23 0:43] [DEBUG] Mensaje recibido: q
+[2022-10-23 0:43] [INFO] Calculando operacion ...
+[2022-10-23 0:43] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:43] [INFO] Validando factorial ...
+[2022-10-23 0:43] [INFO] Validando otra operacion ...
+[2022-10-23 0:43] [ERROR] Operacion invalida
+[2022-10-23 0:43] [DEBUG] Invalid operation
+[2022-10-23 0:43] [INFO] Calculando operacion ... OK
+[2022-10-23 0:43] [INFO] Cerrando conexión con socket a pedido del usuario...
+[2022-10-23 0:43] [INFO] Esperando conexión...
+[2022-10-23 0:47] [INFO] =======================================
+[2022-10-23 0:47] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:47] [INFO] =======================================
+[2022-10-23 0:47] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:47] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:47] [INFO] Esperando conexión...
+[2022-10-23 0:47] [INFO] Conexión aceptada
+[2022-10-23 0:47] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:47] [INFO] Enviando logs al cliente
+[2022-10-23 0:47] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:47] [INFO] Enviando logs al cliente
+[2022-10-23 0:47] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:47] [INFO] Calculando operacion ...
+[2022-10-23 0:47] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:47] [ERROR] Operacion invalida
+[2022-10-23 0:47] [DEBUG] Invalid operation
+[2022-10-23 0:47] [INFO] Calculando operacion ... OK
+[2022-10-23 0:48] [INFO] =======================================
+[2022-10-23 0:48] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:48] [INFO] =======================================
+[2022-10-23 0:48] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:48] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:48] [INFO] Esperando conexión...
+[2022-10-23 0:49] [INFO] Conexión aceptada
+[2022-10-23 0:49] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:49] [INFO] Enviando logs al cliente
+[2022-10-23 0:49] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:49] [INFO] Calculando operacion ...
+[2022-10-23 0:49] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:49] [ERROR] Operacion invalida
+[2022-10-23 0:49] [DEBUG] Invalid operation
+[2022-10-23 0:49] [INFO] Calculando operacion ... OK
+[2022-10-23 0:50] [INFO] =======================================
+[2022-10-23 0:50] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:50] [INFO] =======================================
+[2022-10-23 0:50] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:50] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:50] [INFO] Esperando conexión...
+[2022-10-23 0:50] [INFO] Conexión aceptada
+[2022-10-23 0:51] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:51] [INFO] Enviando logs al cliente
+[2022-10-23 0:51] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:51] [INFO] Calculando operacion ...
+[2022-10-23 0:51] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:51] [ERROR] Operacion invalida
+[2022-10-23 0:51] [DEBUG] Invalid operation
+[2022-10-23 0:51] [INFO] Calculando operacion ... OK
+[2022-10-23 0:54] [INFO] =======================================
+[2022-10-23 0:54] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:54] [INFO] =======================================
+[2022-10-23 0:54] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:54] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:54] [INFO] Esperando conexión...
+[2022-10-23 0:56] [ERROR] Error al aceptar conexión
+[2022-10-23 0:56] [INFO] =======================================
+[2022-10-23 0:56] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:56] [INFO] =======================================
+[2022-10-23 0:56] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:56] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:56] [INFO] Esperando conexión...
+[2022-10-23 0:56] [INFO] Conexión aceptada
+[2022-10-23 0:56] [DEBUG] Mensaje recibido: l
+[2022-10-23 0:56] [INFO] Enviando logs al cliente
+[2022-10-23 0:56] [DEBUG] Mensaje recibido: q
+[2022-10-23 0:56] [INFO] Calculando operacion ...
+[2022-10-23 0:56] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:56] [INFO] Validando factorial ...
+[2022-10-23 0:56] [INFO] Validando otra operacion ...
+[2022-10-23 0:56] [ERROR] Operacion invalida
+[2022-10-23 0:56] [DEBUG] Invalid operation
+[2022-10-23 0:56] [INFO] Calculando operacion ... OK
+[2022-10-23 0:56] [INFO] Cerrando conexión con socket a pedido del usuario...
+[2022-10-23 0:56] [INFO] Esperando conexión...
+[2022-10-23 0:57] [INFO] Conexión aceptada
+[2022-10-23 0:57] [DEBUG] Mensaje recibido: 1+1
+[2022-10-23 0:57] [INFO] Calculando operacion ...
+[2022-10-23 0:57] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:57] [INFO] Validando factorial ...
+[2022-10-23 0:57] [INFO] Validando otra operacion ...
+[2022-10-23 0:57] [DEBUG] Operation: 1+1 | Number 1: 1 | Number 2: 1 | Operator: +
+[2022-10-23 0:57] [DEBUG] La operacion no es factorial
+[2022-10-23 0:57] [DEBUG] 1+1 = 2
+[2022-10-23 0:57] [INFO] Calculando operacion ... OK
+[2022-10-23 0:57] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:57] [INFO] Calculando operacion ...
+[2022-10-23 0:57] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:57] [ERROR] Operacion invalida
+[2022-10-23 0:57] [DEBUG] Invalid operation
+[2022-10-23 0:57] [INFO] Calculando operacion ... OK
+[2022-10-23 0:57] [DEBUG] Mensaje recibido: 
+[2022-10-23 0:57] [INFO] Calculando operacion ...
+[2022-10-23 0:57] [INFO] Validacion general de la operacion ...
+[2022-10-23 0:57] [ERROR] Operacion invalida
+[2022-10-23 0:57] [DEBUG] Invalid operation
+[2022-10-23 0:57] [INFO] Calculando operacion ... OK
+[2022-10-23 0:57] [INFO] =======================================
+[2022-10-23 0:57] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:57] [INFO] =======================================
+[2022-10-23 0:57] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:57] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:57] [INFO] Esperando conexión...
+[2022-10-23 0:58] [INFO] Conexión aceptada
+[2022-10-23 0:59] [INFO] =======================================
+[2022-10-23 0:59] [INFO] ========== Inicia Servidor ============
+[2022-10-23 0:59] [INFO] =======================================
+[2022-10-23 0:59] [INFO] Iniciando socket ... Puerto de escucha: 8080
+[2022-10-23 0:59] [INFO] Socket iniciado correctamente en el puerto: 8080
+[2022-10-23 0:59] [INFO] Esperando conexión...
+[2022-10-23 0:59] [INFO] Conexión aceptada

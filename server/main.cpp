@@ -23,7 +23,7 @@ int main(int argc, char const *argv[]) {
     int server_fd, new_socket, valread;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
-    char buffer[1024] = { 0 };
+    char buffer[1024];
  
     socketSetup(&server_fd, address);
 
@@ -46,11 +46,24 @@ int main(int argc, char const *argv[]) {
 
         // Connected Socket loop
         do {
+            string msg;
+
+            // vacio el buffer
+            fill(begin(buffer), end(buffer), '\0');
+
             valread = read(new_socket, buffer, 1024);
 
             Logger::Debug("Mensaje recibido: " + string(buffer));
 
-            string msg = Calculator::Do(buffer);
+            // si el mensaje es para ver logs
+            if (buffer[0] == 'l') {
+                Logger::Info("Enviando logs al cliente");
+
+                msg = Logger::GetLogFileContent();
+
+            } else {
+                 msg = Calculator::Do(buffer);
+            }
 
             send(new_socket, msg.c_str(), msg.length(), 0);
 

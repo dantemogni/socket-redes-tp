@@ -12,6 +12,7 @@ class Logger {
         static int Info(string message);
         static int Debug(string message);
         static int Error(string message);
+        static string GetLogFileContent();
     private:
         static string GetTimestamp();
         static int Write(string type, string message);

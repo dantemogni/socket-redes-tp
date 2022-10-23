@@ -1,6 +1,6 @@
 # Client -------------------------------------------------------------------
 compile-client:
-	g++ -o .compiled/Client client/*.cpp
+	g++ -o .compiled/Client client/*.cpp client/ui/*.cpp client/internal/*.cpp
 
 run-client:
 	./.compiled/Client

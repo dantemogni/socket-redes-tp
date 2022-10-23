@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool Validate::Factorial(string operation, double* number){
+bool Validate::Factorial(string operation, int* number){
     Logger::Info("Validando factorial ...");
 
     // Check if the operation is factorial
@@ -10,7 +10,7 @@ bool Validate::Factorial(string operation, double* number){
         // Check if the operation is only factorial
         if (operation.find("!") == operation.length() - 1) {
             // Check if the number is positive
-            double n = stod(operation.substr(0, operation.back()));
+            int n = stod(operation.substr(0, operation.back()));
             if (IsPositive(n)) {
                 *number = n;
                 Logger::Debug("Numero a calcular factorial: " + to_string(*number));
@@ -22,7 +22,7 @@ bool Validate::Factorial(string operation, double* number){
     return false;
 }
 
-bool Validate::Other(string operation, char* op, double* a, double* b) {
+bool Validate::Other(string operation, char* op, int* a, int* b) {
     Logger::Info("Validando otra operacion ...");
 
     list<char> operators{'+', '-', '*', '/', '^'};
@@ -32,8 +32,8 @@ bool Validate::Other(string operation, char* op, double* a, double* b) {
 
         if (index != string::npos){
             try {
-                double n1 = stod(operation.substr(0, index));
-                double n2 = stod(operation.substr(index + 1, operation.length()));
+                int n1 = stod(operation.substr(0, index));
+                int n2 = stod(operation.substr(index + 1, operation.length()));
 
                 if (Validate::IsPositive(n1) && Validate::IsPositive(n2)){
                     *op = o;
@@ -52,14 +52,14 @@ bool Validate::Other(string operation, char* op, double* a, double* b) {
     return false;
 }
 
-bool Validate::IsPositive(double number){
+bool Validate::IsPositive(int number){
     return number >= 0;
 }
 
 bool Validate::Length(string operation){
     return operation.length() <= 20 && operation.length() >= 1;
 }
-void Validate::Do(char buffer[], bool* isValid, bool* isFactorial, double* numberA, double* numberB, char* op){
+void Validate::Do(string buffer, bool* isValid, bool* isFactorial, int* numberA, int* numberB, char* op){
     Logger::Info("Validacion general de la operacion ...");
 
     *isValid = true;

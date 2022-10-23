@@ -10,8 +10,8 @@ using namespace std;
 
 class Calculator {      
   public:
-    static double Calculate(double x, char oper, double y);
-    static double Factorial(double x);
-    static string Do(char buffer[]);
+    static int Calculate(int x, char oper, int y);
+    static int Factorial(int x);
+    static string Do(string buffer);
 };
 

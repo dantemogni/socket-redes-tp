@@ -2,7 +2,7 @@
 #include "./../headers/validate.h"
 
 
-double Calculator::Calculate(double x, char oper, double y) {
+int Calculator::Calculate(int x, char oper, int y) {
 
     switch(oper)
     {
@@ -21,7 +21,7 @@ double Calculator::Calculate(double x, char oper, double y) {
     }
 }
 
-double Calculator::Factorial(double x) {
+int Calculator::Factorial(int x) {
     if (x == 0) {
         return 1;
     } else {
@@ -29,11 +29,11 @@ double Calculator::Factorial(double x) {
     }
 }
 
-string Calculator::Do(char buffer[]){
+string Calculator::Do(string buffer){
     Logger::Info("Calculando operacion ...");
 
     bool isValid, isFactorial;
-    double result, numberA, numberB;
+    int result, numberA, numberB;
     char op;
     string msg;
 
@@ -42,7 +42,7 @@ string Calculator::Do(char buffer[]){
     if (isValid){
         if (isFactorial){
             result = Calculator::Factorial(numberA);
-            msg = to_string(numberA) + "! =" + to_string(result);
+            msg = to_string(numberA) + "! = " + to_string(result);
         } else {
             result = Calculator::Calculate(numberA, op, numberB);
             msg = to_string(numberA) + op + to_string(numberB) + " = " + to_string(result);

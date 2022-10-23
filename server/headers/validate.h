@@ -9,10 +9,10 @@ using namespace std;
 
 class Validate {      
   public:
-    static bool Factorial(string operation, double* number);
-    static bool Other(string operation, char* op, double* a, double* b);
+    static bool Factorial(string operation, int* number);
+    static bool Other(string operation, char* op, int* a, int* b);
     static bool Length(string operation);
-    static void Do(char buffer[], bool* isValid, bool* isFactorial, double* numberA, double* numberB, char* op);
+    static void Do(string buffer, bool* isValid, bool* isFactorial, int* numberA, int* numberB, char* op);
   private:
-    static bool IsPositive(double number);
+    static bool IsPositive(int number);
 };
