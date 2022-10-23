@@ -31,6 +31,7 @@ bool Validate::Other(string operation, char* op, int* a, int* b) {
         size_t index = operation.find(o);
 
         if (index != string::npos){
+            
             try {
                 int n1 = stod(operation.substr(0, index));
                 int n2 = stod(operation.substr(index + 1, operation.length()));
@@ -74,13 +75,9 @@ void Validate::Do(string buffer, bool* isValid, bool* isFactorial, int* numberA,
         } else {
             *isValid = false;
             Logger::Error("Operacion invalida");
-
-            cout << "Operación inválida" << endl;
         }
     } else {
         *isValid = false;
-        Logger::Error("Operacion invalida");
-
-        cout << "La operación debe tener entre 1 y 20 caracteres" << endl;
+        Logger::Error("Operacion invalida. La operación debe tener entre 1 y 20 caracteres");
     }
 }
