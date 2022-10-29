@@ -1,8 +1,8 @@
 #include "./../headers/socket.h"
 
 
-void socketSetup(int* server_fd, struct sockaddr_in address){
-    Logger::Info("Iniciando socket ... Puerto de escucha: " + to_string(PORT));
+void socketSetup(int port, int* server_fd, struct sockaddr_in address){
+    Logger::Info("Iniciando socket ... Puerto de escucha: " + to_string(port));
 
     int opt = 1; // 1 for true, as in enabled
     struct timeval timeout;  
@@ -60,24 +60,24 @@ void socketSetup(int* server_fd, struct sockaddr_in address){
 
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(PORT);
+    address.sin_port = htons(port);
  
     // Forcefully attaching socket to the port 8080
     if (bind(*server_fd, (struct sockaddr*)&address,
              sizeof(address))
         < 0) {
         perror("bind failed");
-        Logger::Error("Error al enlazar el socket con el puerto: " + to_string(PORT));
+        Logger::Error("Error al enlazar el socket con el puerto: " + to_string(port));
 
         exit(EXIT_FAILURE);
     }
     if (listen(*server_fd, 3) < 0) {
         perror("listen");
 
-        Logger::Error("Error al escuchar en el puerto: " + to_string(PORT));
+        Logger::Error("Error al escuchar en el puerto: " + to_string(port));
 
         exit(EXIT_FAILURE);
     }
 
-    Logger::Info("Socket iniciado correctamente en el puerto: " + to_string(PORT));
+    Logger::Info("Socket iniciado correctamente en el puerto: " + to_string(port));
 }

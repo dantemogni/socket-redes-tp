@@ -8,8 +8,6 @@
 #include <unistd.h>
 #include "./logger.h"
 
-#define PORT 8080
-
 using namespace std;
 
-void socketSetup(int* server_fd, struct sockaddr_in address);
+void socketSetup(int port, int* server_fd, struct sockaddr_in address);

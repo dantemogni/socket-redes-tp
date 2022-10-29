@@ -77,7 +77,8 @@ void subMenuCalcular(int socket){
         fill(begin(buffer), end(buffer), '\0');
 
         int valread = read(socket, buffer, 5000);
-        cout << "RESULTADO: " << buffer << endl;
+        system("clear");
+        cout << "RESULTADO: " << buffer << endl << endl;
     }
     
 }

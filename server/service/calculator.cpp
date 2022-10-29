@@ -48,7 +48,7 @@ string Calculator::Do(string buffer){
             msg = to_string(numberA) + op + to_string(numberB) + " = " + to_string(result);
         }
     } else {
-        msg = "Invalid operation";
+        msg = "Operacion invalida";
     }
 
     Logger::Debug(msg);

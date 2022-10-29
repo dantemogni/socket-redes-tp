@@ -12,20 +12,31 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
+#define DEFAULT_PORT 8080
+
 using namespace std;
 
 int main(int argc, char const *argv[]) {
+    system("clear");
+
     Logger::Info("=======================================");
     Logger::Info("========== Inicia Servidor ============");
     Logger::Info("=======================================");
 
-    // setup socket
-    int server_fd, new_socket, valread;
+     // setup socket
+    int port = DEFAULT_PORT, server_fd, new_socket, valread;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
     char buffer[1024];
- 
-    socketSetup(&server_fd, address);
+
+    // seteo el puerto segun los argumentos de la linea de comandos
+    if (argc == 1) {
+        Logger::Info("No se ha ingresado ningun puerto. Utilizando valor por defecto");
+    } else {
+        port = atoi(argv[1]);
+    }
+
+    socketSetup(port, &server_fd, address);
 
     // Main Server Loop
     while (true) {
