@@ -6,8 +6,6 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#define PORT 8080
-
 using namespace std;
 
-int socketSetup(int* sock, struct sockaddr_in& serv_addr);
+int socketSetup(int port, int* sock, struct sockaddr_in& serv_addr);
