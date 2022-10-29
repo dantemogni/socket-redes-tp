@@ -1,17 +1,25 @@
+# Variables -------------------------------------------------------------------
+COMPILED_FLD =  ${PWD}/.compiled
+CLIENT_FLD = ${PWD}/client
+SERVER_FLD = ${PWD}/server
+
 # Client -------------------------------------------------------------------
 compile-client:
-	g++ -o .compiled/Client client/*.cpp client/ui/*.cpp client/internal/*.cpp
+	g++ -o ${COMPILED_FLD}/Client  ${CLIENT_FLD}/*.cpp  ${CLIENT_FLD}/ui/*.cpp  ${CLIENT_FLD}/internal/*.cpp
 
-run-client:
-	./.compiled/Client
+run-client $(PORT):
+	${COMPILED_FLD}/Client $(PORT)
 
-client: compile-client run-client
+.PHONY: client
+client $(PORT): compile-client run-client $(PORT)
+
 
 # Server -------------------------------------------------------------------
 compile-server:
-	g++ -o ./.compiled/Server server/*.cpp server/utils/*.cpp server/internal/*.cpp server/service/*.cpp
+	g++ -o ${COMPILED_FLD}/Server ${SERVER_FLD}/*.cpp ${SERVER_FLD}/utils/*.cpp ${SERVER_FLD}/internal/*.cpp ${SERVER_FLD}/service/*.cpp
 
-run-server:
-	./.compiled/Server
+run-server $(PORT):
+	${COMPILED_FLD}/Server $(PORT)
 
-server: compile-server run-server
+.PHONY: server
+server $(PORT): compile-server run-server $(PORT)
