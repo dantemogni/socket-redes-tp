@@ -12,6 +12,9 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
+#include <chrono>
+typedef std::chrono::high_resolution_clock Clock;
+
 #define DEFAULT_PORT 8080
 
 using namespace std;
@@ -42,7 +45,7 @@ int main(int argc, char const *argv[]) {
     while (true) {
         Logger::Info("Esperando conexión...");
 
-        // Accept new connection
+        // Aacepto la conexión
         if ((new_socket
             = accept(server_fd, (struct sockaddr*)&address,
                     (socklen_t*)&addrlen))
@@ -57,12 +60,25 @@ int main(int argc, char const *argv[]) {
 
         // Connected Socket loop
         while(true) {
+
+            // Para el timeout
+            auto start = Clock::now();
+            
             string msg;
 
             // vacio el buffer
             fill(begin(buffer), end(buffer), '\0');
 
+            // leo el buffer
             valread = read(new_socket, buffer, 1024);
+
+            // chequea si la duracion en mintuos es mayor a 2, si es asi, cierra la conexion
+            if (chrono::duration_cast<chrono::minutes>(Clock::now() - start).count() > 2) {
+                Logger::Info("Cliente desconectado por inactividad. Cerrando conexión...");
+                send(new_socket, "timeout", 10, 0);
+                close(new_socket);
+                break;
+            }
 
             Logger::Debug("Mensaje recibido: " + string(buffer));
 
@@ -73,11 +89,11 @@ int main(int argc, char const *argv[]) {
                 msg = Logger::GetLogFileContent();
             } else if (buffer[0] == 'q') {
                 Logger::Info("Cerrando conexión con el cliente");
-                // closing the connected socket
                 close(new_socket);
                 break;
             } else {
                 msg = Calculator::Do(buffer);
+                Logger::Debug("Mensaje a enviar: " + msg);
             }
 
             send(new_socket, msg.c_str(), msg.length(), 0);

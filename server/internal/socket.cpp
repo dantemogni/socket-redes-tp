@@ -27,36 +27,7 @@ void socketSetup(int port, int* server_fd, struct sockaddr_in address){
 
         exit(EXIT_FAILURE);
     }
-    
-    // Confiura el timeout
-    timeout.tv_sec = 120;
-    timeout.tv_usec = 0;
 
-    // Confgura SO_SNDTIMEO (Sets the timeout, in milliseconds, for blocking receive calls.)
-    if (setsockopt(*server_fd,
-            SOL_SOCKET,
-            SO_SNDTIMEO,
-            &timeout,
-            sizeof(timeout))
-        ) {
-        perror("setsockopt");
-        Logger::Error("Error al configurar SO_SNDTIMEO el socket");
-
-        exit(EXIT_FAILURE);
-    }
-
-    // Confgura SO_RCVTIMEO
-    if (setsockopt(*server_fd,
-            SOL_SOCKET,
-            SO_RCVTIMEO,
-            &timeout,
-            sizeof(timeout))
-        ) {
-        perror("setsockopt");
-        Logger::Error("Error al configurar SO_RCVTIMEO el socket");
-
-        exit(EXIT_FAILURE);
-    }
 
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;

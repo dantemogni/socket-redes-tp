@@ -5,9 +5,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <sys/socket.h>
+#include <cstdlib>
 #include <unistd.h>
+
 
 using namespace std;
 
 void mainMenu(int socket, int client_fd);
-void subMenuCalcular(int socket);
+int subMenuCalcular(int socket);

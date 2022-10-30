@@ -1,6 +1,8 @@
 #include <iostream>
 #include "./headers/menu.h"
 #include "./headers/socket.h"
+
+
 #define DEFAULT_PORT 8080
 
 
@@ -32,5 +34,7 @@ int main(int argc, char const *argv[])
 
     // ui - display menu
     mainMenu(sock, client_fd);
+
+    close(client_fd);
     return 0;
 }

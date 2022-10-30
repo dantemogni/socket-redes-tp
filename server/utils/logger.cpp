@@ -17,6 +17,9 @@ string Logger::GetLogFileContent(){
 }
 
 int Logger::Write(string type, string message) {
+    // fflush
+    fflush(stdout);
+
     ofstream myfile;
     myfile.open(LOG_FILE, fstream::app);
 

@@ -32,27 +32,29 @@ int Calculator::Factorial(int x) {
 string Calculator::Do(string buffer){
     Logger::Info("Calculando operacion ...");
 
-    bool isValid, isFactorial;
+    bool isValid = false, isFactorial = false;
+    string strNumberA, strNumberB;
     int result, numberA, numberB;
     char op;
     string msg;
 
-    Validate::Do(buffer, &isValid, &isFactorial, &numberA, &numberB, &op);
+    msg = Validate::Do(buffer, &isValid, &isFactorial, &strNumberA, &strNumberB, &op);
 
     if (isValid){
+        numberA = stoi(strNumberA);
+
         if (isFactorial){
             result = Calculator::Factorial(numberA);
             msg = to_string(numberA) + "! = " + to_string(result);
         } else {
+            numberB = stoi(strNumberB);
             result = Calculator::Calculate(numberA, op, numberB);
             msg = to_string(numberA) + op + to_string(numberB) + " = " + to_string(result);
         }
-    } else {
-        msg = "Operacion invalida";
-    }
+    } 
 
     Logger::Debug(msg);
-    Logger::Info("Calculando operacion ... OK");
+    Logger::Info("Calculando operacion ... HECHO");
 
     return msg;
 }
